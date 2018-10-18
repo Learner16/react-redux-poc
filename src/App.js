@@ -1,28 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import CustomButton from './customButton/index';
+import WebCamera from './webCamera/index';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <p> Task1: The state of the button is </p>
+    <CustomButton />
+    <p> Task 2: Access the web Camera: </p>
+    <WebCamera />
+  </div>
+);
 
 export default App;

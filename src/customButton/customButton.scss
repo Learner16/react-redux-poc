@@ -1,0 +1,20 @@
+.custom-button {
+  width: 150px;
+  margin: 10px;
+  
+  &.button-primary {
+    background: #2196f3;
+    color: #fff;
+    &:hover {
+      background: #2196f3;
+    }
+  }
+
+  &.button-secondary {
+    background: #e10150;
+    color: #fff;
+    &:hover {
+      background: #e10150;
+    }
+  }
+}
